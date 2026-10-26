@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <laneAreaDetector id="det_NW_0" lane="E9_0"  pos="82.37"  length="25.00" period="300.00" file="detectors_out.xml"/>
+    <laneAreaDetector id="det_NW_1" lane="E9_1"  pos="82.37"  length="25.00" period="300.00" file="detectors_out.xml"/>
+    <laneAreaDetector id="det_NE_0" lane="E5_0"  pos="90.50"  length="25.00" period="300.00" file="detectors_out.xml"/>
+    <laneAreaDetector id="det_NE_1" lane="E5_1"  pos="90.50"  length="25.00" period="300.00" file="detectors_out.xml"/>
+    <laneAreaDetector id="det_SW_0" lane="E6_0"  pos="83.81"  length="25.00" period="300.00" file="detectors_out.xml"/>
+    <laneAreaDetector id="det_SW_1" lane="E6_1"  pos="83.81"  length="25.00" period="300.00" file="detectors_out.xml"/>
+    <laneAreaDetector id="det_SE_0" lane="E10_0" pos="120.46" length="25.00" period="300.00" file="detectors_out.xml"/>
+    <laneAreaDetector id="det_SE_1" lane="E10_1" pos="120.46" length="25.00" period="300.00" file="detectors_out.xml"/>
+</additional>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewsettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/viewsettings_file.xsd">
+    <scheme name="real world"/>
+    <!-- Satellite picture drawn under the network. Same size/position as the background used in netedit. -->
+    <decal file="Bhatta_Chowk.png" centerX="4.70" centerY="1.00" centerZ="0.00" width="261.47" height="261.47" rotation="0.00" tilt="0.00" roll="0.00" layer="-1.00" screenRelative="0"/>
+</viewsettings>

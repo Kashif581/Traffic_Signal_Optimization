@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="car" vClass="passenger" length="4.5" maxSpeed="13.89" accel="2.6" decel="4.5" sigma="0.5"/>
+
+    <!-- Road A (top-left <-> bottom-right): heavier demand -->
+    <flow id="E9_E11"  type="car" begin="0" end="1100" vehsPerHour="400" from="E9"  to="E11" departLane="best" departSpeed="max"/>
+    <flow id="E9_E7"   type="car" begin="0" end="1100" vehsPerHour="100" from="E9"  to="E7"  departLane="best" departSpeed="max"/>
+    <flow id="E9_E4"   type="car" begin="0" end="1100" vehsPerHour="80"  from="E9"  to="E4"  departLane="best" departSpeed="max"/>
+    <flow id="E10_E8"  type="car" begin="0" end="1100" vehsPerHour="400" from="E10" to="E8"  departLane="best" departSpeed="max"/>
+    <flow id="E10_E4"  type="car" begin="0" end="1100" vehsPerHour="100" from="E10" to="E4"  departLane="best" departSpeed="max"/>
+    <flow id="E10_E7"  type="car" begin="0" end="1100" vehsPerHour="80"  from="E10" to="E7"  departLane="best" departSpeed="max"/>
+
+    <!-- Road B (top-right <-> bottom-left): lighter demand -->
+    <flow id="E5_E7"   type="car" begin="0" end="1100" vehsPerHour="250" from="E5"  to="E7"  departLane="best" departSpeed="max"/>
+    <flow id="E5_E8"   type="car" begin="0" end="1100" vehsPerHour="60"  from="E5"  to="E8"  departLane="best" departSpeed="max"/>
+    <flow id="E5_E11"  type="car" begin="0" end="1100" vehsPerHour="40"  from="E5"  to="E11" departLane="best" departSpeed="max"/>
+    <flow id="E6_E4"   type="car" begin="0" end="1100" vehsPerHour="250" from="E6"  to="E4"  departLane="best" departSpeed="max"/>
+    <flow id="E6_E11"  type="car" begin="0" end="1100" vehsPerHour="60"  from="E6"  to="E11" departLane="best" departSpeed="max"/>
+    <flow id="E6_E8"   type="car" begin="0" end="1100" vehsPerHour="40"  from="E6"  to="E8"  departLane="best" departSpeed="max"/>
+</routes>
