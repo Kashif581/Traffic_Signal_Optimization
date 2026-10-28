@@ -7,10 +7,6 @@ import numpy as np
 import matplotlib.pyplot as plt  # Visualization
 
 
-
-
-
-
 # Step 2: Establish path to SUMO (SUMO_HOME)
 if 'SUMO_HOME' in os.environ:
     tools = os.path.join(os.environ['SUMO_HOME'], 'tools')
@@ -71,32 +67,6 @@ last_switch_step = -MIN_GREEN_STEPS
 # -------------------------
 # Step 7: Define Functions
 # -------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 def discretize(state):
     """
@@ -159,10 +129,6 @@ def apply_action(action, tls_id=TLS_ID): #5. Constraint 5
 
 
 
-
-
-
-
 def update_Q_table(old_state, action, reward, new_state): #6. Constraint 6
     old_state = discretize(old_state)   # new_state is discretized inside get_max_Q_value_of_state
     if old_state not in Q_table:
@@ -177,11 +143,6 @@ def update_Q_table(old_state, action, reward, new_state): #6. Constraint 6
     Q_table[old_state][action] = old_q + ALPHA * (reward + GAMMA * best_future_q - old_q)
 
 
-
-
-
-
-
 def get_action_from_policy(state): #7. Constraint 7
     state = discretize(state)
     if random.random() < EPSILON:
@@ -190,8 +151,6 @@ def get_action_from_policy(state): #7. Constraint 7
         if state not in Q_table:
             Q_table[state] = np.zeros(len(ACTIONS))
         return int(np.argmax(Q_table[state]))
-
-
 
 
 def get_queue_length(detector_id): #8.Constraint 8

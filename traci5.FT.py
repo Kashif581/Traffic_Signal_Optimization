@@ -6,10 +6,6 @@ import numpy as np
 import matplotlib.pyplot as plt  # Visualization
 
 
-
-
-
-
 # Step 2: Establish path to SUMO (SUMO_HOME)
 if 'SUMO_HOME' in os.environ:
     tools = os.path.join(os.environ['SUMO_HOME'], 'tools')
@@ -72,31 +68,6 @@ last_switch_step = -MIN_GREEN_STEPS
 # -------------------------
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 def get_max_Q_value_of_state(s): #1. Objective Function 1
     if s not in Q_table:
         Q_table[s] = np.zeros(len(ACTIONS))
@@ -149,10 +120,6 @@ def apply_action(action, tls_id=TLS_ID): #5. Constraint 5
 
 
 
-
-
-
-
 def update_Q_table(old_state, action, reward, new_state): #6. Constraint 6
     if old_state not in Q_table:
         Q_table[old_state] = np.zeros(len(ACTIONS))
@@ -166,11 +133,6 @@ def update_Q_table(old_state, action, reward, new_state): #6. Constraint 6
     Q_table[old_state][action] = old_q + ALPHA * (reward + GAMMA * best_future_q - old_q)
 
 
-
-
-
-
-
 def get_action_from_policy(state): #7. Constraint 7
     if random.random() < EPSILON:
         return random.choice(ACTIONS)
@@ -178,8 +140,6 @@ def get_action_from_policy(state): #7. Constraint 7
         if state not in Q_table:
             Q_table[state] = np.zeros(len(ACTIONS))
         return 0
-
-
 
 
 def get_queue_length(detector_id): #8.Constraint 8

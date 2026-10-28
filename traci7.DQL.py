@@ -149,10 +149,6 @@ def apply_action(action, tls_id=TLS_ID): #5. Constraint 5
 
 
 
-
-
-
-
 def update_Q_table(old_state, action, reward, new_state): #6. Constraint 6
     """
     In DQN, we do a single-step gradient update instead of a table update.

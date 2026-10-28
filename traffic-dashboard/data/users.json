@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Mohammed Kashif Abdullah",
+    "email": "kashifabdullah581@gmail.com",
+    "role": "admin",
+    "algo": "scrypt",
+    "salt": "b41868176329130609a30317c39519c8",
+    "hash": "14b27cc84a9057f48d175bf4b9c6c8cb2adad805807ad09238f65db6453076a4",
+    "created": "2026-10-27 15:09:46"
+  }
+]
